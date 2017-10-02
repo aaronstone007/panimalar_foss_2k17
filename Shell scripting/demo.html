@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="author" content="Santhoshkumar Kotteeswaran">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<title>Shell</title>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Why command when I got GUI</h3>
+				</section>
+
+				<section>
+					<h2>Who am I ??</h2><br>
+					<h3>SANTHOSHKUMAR KOTTEESWARAN</h3>
+				</section>
+
+				<section>
+					<section>
+						<h3>Let's make your Terminal look cool !!</h3>
+					</section>
+					<section>
+						<h2>Basic Operations</h2><br>
+						<ul>
+							<li>mkdir</li>
+							<li>cd</li>
+							<li>touch</li>
+							<li>rename</li>
+							<li>hide</li>
+							<li><<</li>
+							<li>echo</li>
+							<li>history</li>
+							<li>df -h</li>
+							<li>uname -h</li>
+							<li>nautilus</li>
+							<li>sudo ...</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Let's create a shell file, that can</h3>
+						<ul>
+							<li>create a folder named "book"</li>
+							<li>within book create a folder named "page"</li>
+							<li>create a empty file named "empty"</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Contest time !!</h2>
+					<ul>
+						<li>create a folder named "diary"</li>
+						<li>within book create a folder named "frnds"</li>
+						<li>create a empty file named "personal"</li>
+						<li>create a file named "girlfriends" and write all your girlfrinds name in there !!</li>
+						<li>hide the "girlfriends" file</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Bash file</h2>
+					<ul>
+						<li>Write a custom command to automate shutdown</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Resources</h2>
+					<ul>
+						<li>http://tldp.org/LDP/abs/html/</li>
+						<li>https://www.shellscript.sh/</li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

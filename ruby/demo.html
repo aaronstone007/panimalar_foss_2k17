@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="author" content="Santhoshkumar Kotteeswaran">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<title>Ruby</title>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img src="assets/images.png">
+					<h3>Ruby</h3>
+				</section>
+
+				<section>
+					<h2>Who am I ??</h2><br>
+					<h3>SANTHOSHKUMAR KOTTEESWARAN</h3>
+				</section>
+
+				<section>
+					<section>
+						<img src="assets/matz.jpg">
+						<h3>Yukihiro Matsumoto</h3>
+					</section>
+					<section>
+						<h4>Ruby is a dynamic, reflective, object-oriented, general-purpose programming language.</h4><br>
+					</section>
+					<section>
+						<h3>Get into irb</h3>
+						<ul>
+							<li>Addition</li>
+							<li>Subtraction</li>
+							<li>Multiplication</li>
+							<li>Division</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Contest time !!</h2>
+					<h4>Write a hello world program.. FAST</h4>
+					<pre><code class="fragment fade-up">
+		puts "Hello World"
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Array</h2>
+					<pre><code>
+      digits = Array(0..9)
+      puts "#{digits}"
+
+      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+				</pre></code>
+				</section>
+
+				<section>
+					<h2>Hashes</h2>
+					<pre><code>
+      H = Hash["a" => 100, "b" => 200]
+      puts "#{H['a']}"
+      puts "#{H['b']}"
+
+			100
+			200
+				</pre></code>
+				</section>
+
+				<section>
+					<h3>Control Flow</h3>
+				</section>
+
+				<section>
+					<h3>If-else</h3>
+					<pre><code>
+		if conditional [then]
+		  code...
+		[elsif conditional [then]
+		   code...]...
+		[else
+		   code...]
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code>
+		x = 1
+		if x > 2
+		   puts "x is greater than 2"
+		elsif x <= 2 and x!=0
+		   puts "x is 1"
+		else
+		   puts "I can't guess the number"
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Unless</h3>
+					<pre><code>
+		unless conditional [then]
+		   code
+		[else
+		   code ]
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code>
+		x = 1
+		unless x>=2
+		   puts "x is less than 2"
+		else
+		   puts "x is greater than 2"
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Case</h3>
+					<pre><code>
+		case expression
+		[when expression [, expression ...] [then]
+		   code ]...
+		[else
+		   code ]
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Case</h3>
+					<pre><code>
+		#!/usr/bin/ruby
+
+		$age =  5
+		case $age
+		when 0 .. 2
+		   puts "baby"
+		when 3 .. 6
+		   puts "little child"
+		when 7 .. 12
+		   puts "child"
+		when 13 .. 18
+		   puts "youth"
+		else
+		   puts "adult"
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Loops</h2>
+				</section>
+
+				<section>
+					<h3>while</h3>
+					<pre><code>
+		while conditional [do]
+		   code
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code>
+		$i = 0
+		$num = 5
+
+		while $i < $num  do
+		  puts("Inside the loop i = #$i" )
+		  $i +=1
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>for</h3>
+					<pre><code>
+	for variable [, variable ...] in expression [do]
+		code
+	end
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code>
+		for i in 0..5
+		   puts "Value of local variable is #{i}"
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>OOPs</h2>
+					<pre><code>
+		class Customer
+		end
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code>
+		#!/usr/bin/ruby
+
+		class Sample
+		   def hello
+		      puts "Hello Ruby!"
+		   end
+		end
+
+		# Now using above class to create objects
+		object = Sample. new
+		object.hello
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code>
+class Customer
+   @@no_of_customers = 0
+   def initialize(id, name, addr)
+      @cust_id = id
+      @cust_name = name
+      @cust_addr = addr
+   end
+end
+
+cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
+cust2 = Customer.new("2", "Poul", "New Empire road, Khandala")
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Contest Time !!</h3>
+					<h3>Write a coin toss program !!</h3>
+					<pre><code class="fragment fade-up">
+	puts "say your choice"
+	puts "press go when ready"
+	check=gets.chomp
+	case check
+	when "go"
+	hit=rand(1..2)
+	if hit==1
+	puts "tail"
+	else
+	puts "head"
+	end
+	else
+	puts"cant tell"
+	end
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Resources</h3>
+					<ul>
+						<li>https://www.ruby-lang.org/en/</li>
+						<li>https://www.codecademy.com</li>
+					</ul>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
